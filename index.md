@@ -1,5 +1,6 @@
 ---
 title: Home
+laout: default
 ---
 
 Brian Yee
