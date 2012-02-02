@@ -1,11 +1,10 @@
 ---
 title: Home
-layout: page
+layout: default
 ---
 
-Brian Yee
-==========
+[brian.a.yee@gmail.com](mailto:brian.a.yee@gmail.com){:.email}
 
-This is my website.  Hopefully Markdown works!
+[@BadKemer](www.twitter.com/BadKemer){:.twitter}
 
-Test.
+[byee01](www.github.com.com/byee01){:.github}
