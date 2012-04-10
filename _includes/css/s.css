@@ -11,76 +11,38 @@ body {
   color: #111;
   background: #E7E7E7;
   */
-  color: #FFF;
-  background: #F80;
-  font-family: 'Varela Round', sans-serif;
+  color: #333;
+  background: #F8F8F8;
+  font-family: serif;
   font-size: 1em;
   line-height: 1.5;
   vertical-align: baseline;
 }
 
 html>body {
-  font-size: 18px;
+  font-size: 22px;
 }
 
-canvas {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-#wrapper {
-  margin: 50px auto 0;
-  width: 960px;
-  z-index: 100;
-}
-
-header {
-  margin-bottom: 30px;
-}
-
-header hr {
-  border: 0;
-  background: #FFF;
-  height: 3px;
-  width: 200px;
-  margin: 6px 0 20px 0;
+strong {
+  font-weight: bold;
 }
 
 h1 {
-  text-transform: lowercase;
-  font-size: 3.5em;
-  font-weight: normal;
-}
-
-h2, a {
-  font-weight: normal;
-  font-size: 0.8em;
+  font-size: 5em;
   line-height: 1;
-  text-decoration: none;
-  color: #FFF;
+  font-weight: normal;
 }
 
-a {
-  color: #000;
+h3 {
+  background: #333;
+  color: #F8F8F8;
+  font-size: 1.25em;
+  font-weight: normal;
+  display: inline;
+  padding: 3px 4px;
 }
 
-p {
-  line-height: 0.95;
-  text-decoration: none;
-  color: #FFF;
-}
-
-.email:before {
-  content: "email: ";
-  color: #FFF;
-}
-.twitter:before {
-  content: "twitter: ";
-  color: #FFF;
-}
-.github:before {
-  content: "github: ";
-  color: #FFF;
+header p {
+  font-size: 1.75em;
+  line-height: 1.25;
 }
