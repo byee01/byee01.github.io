@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Brian Yee]]></title>
   <link href="http://byee01.github.com/atom.xml" rel="self"/>
   <link href="http://byee01.github.com/"/>
-  <updated>2012-06-23T19:13:43-04:00</updated>
+  <updated>2012-06-23T19:20:13-04:00</updated>
   <id>http://byee01.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Brian Yee]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Newline]]></title>
+    <link href="http://byee01.github.com/newline/"/>
+    <updated>2012-06-23T19:18:00-04:00</updated>
+    <id>http://byee01.github.com/newline</id>
+    <content type="html"><![CDATA[<h2>Finally.</h2>
+
+<p>It&#8217;s taken long enough, yeah?</p>
+]]></content>
+  </entry>
   
 </feed>
