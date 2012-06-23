@@ -1,0 +1,31 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Brian Yee{% if title %} | title {% endif %}</title>
+  <style type="text/css">
+    /** Normalize CSS from necolas.github.com/normalize.css/ **/
+    {% include css/normalize.css %}
+
+    /** Page Styles **/
+    {% include css/base.css %}
+  </style>
+</head>
+<body>
+  <section id="container">
+    <header>
+      <h1>Brian Yee</h1>
+    </header><!-- /header -->
+    <section id="content">
+      <ul>
+      {% for post in site.posts reversed %}
+          <li class="{{ post.category }}">{{ post.title }}</li>
+      {% endfor %}
+      </ul>
+    </section>
+  </section>
+</body>
+</html>

@@ -1,5 +1,3 @@
 # Test builds for the site
 _site
-
-# Because github uses their own config
-_config.yml
+*.psd
