@@ -18,10 +18,11 @@ body {
   width: 300px;
 }
 
-h1 {
+h1 a {
   color: #E5E5E5;
   font-weight: normal;
   line-height: 1.5em;
+  text-decoration: none;
 }
 
 #content {

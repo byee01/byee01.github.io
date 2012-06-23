@@ -18,12 +18,12 @@
 <body>
   <section id="container">
     <header>
-      <h1>Brian Yee</h1>
+      <h1><a href="/">Brian Yee</a></h1>
       <nav>
         <ul>
-          <li><a href="/posts">Posts</a></li>
-          <li><a href="/about">About</a></li>
-          <li></li>
+        {% for page in site.pages %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
         </ul>
       </nav>
     </header><!-- /header -->

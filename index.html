@@ -1,5 +1,10 @@
 ---
-layout: index
+layout: default
 ---
 
 <strong>Brian Yee - Index</strong>
+<ul>
+{% for post in site.categories.articles reversed %}
+    <li class="{{ post.category }}"><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
