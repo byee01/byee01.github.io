@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Newline
-category: article
+category: articles
+permalink: /articles/newline
 ---
 
 Finally.
