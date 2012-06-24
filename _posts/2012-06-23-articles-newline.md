@@ -16,18 +16,26 @@ style: |
       font-style: normal;
   }
 
+  ::selection {
+    background: #9A1C1F;
+  }
+
   body {
     background: #9A1C1F;
+  }
+
+  #content {
+    color: #E5E5E5;
+    background: #333;
   }
 
   #content header {
     background: url('/img/newline/typewriter-patent.png') no-repeat center;
     background-size: cover;
-    height: 260px;
+    height: 225px;
   }
 
   h2 {
-    color: #FFF;
     font-family: 'BebasNeueRegular', sans-serif;
     font-size: 3em;
     text-align: center;
@@ -37,6 +45,9 @@ style: |
 <header>
   <h2>Newline</h2>
 </header>
+
+<section class="container" markdown="block">
+This is *test* markup.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit turpis ut quam adipiscing gravida. Phasellus iaculis sodales accumsan. In et diam diam. Fusce bibendum quam sit amet sem volutpat ornare. Sed sed ipsum lorem, sit amet scelerisque neque. Nunc varius, turpis vitae feugiat condimentum, nisi nisi aliquet orci, a tristique sem nunc at orci. Pellentesque sollicitudin, orci ut facilisis tempus, ipsum orci fermentum justo, vitae fermentum ligula diam nec metus. Quisque dolor odio, porta eu dapibus id, ultricies et odio. Donec pharetra leo ac leo suscipit faucibus vestibulum mauris suscipit.
 
@@ -51,3 +62,5 @@ Proin ornare lectus in risus porta gravida. Vivamus vitae nisi vel lacus eleifen
 Sed et nisl in diam dignissim porttitor et quis elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce porta congue pretium. Nullam at neque mauris. Etiam vehicula dolor non sapien gravida luctus semper augue pharetra. Mauris tortor eros, pulvinar nec interdum a, malesuada vitae ligula. Fusce fringilla porta feugiat. Praesent ut diam hendrerit lorem sodales mollis. Sed vulputate nisi ac purus porta luctus nec sit amet velit. Fusce bibendum accumsan quam non consectetur. Quisque convallis nisi sed sapien hendrerit nec tempus ante elementum.
 
 Aliquam erat volutpat. Maecenas congue mauris sed augue suscipit faucibus. Proin porta ante sit amet justo mattis adipiscing. Quisque sed massa nec ipsum tempus varius. Aenean at nisi tellus. Donec urna mauris, hendrerit vel scelerisque imperdiet, ullamcorper id quam. Cras ornare tempor ultricies. Fusce vitae euismod ipsum. Integer rhoncus accumsan lectus ut cursus. Donec semper pretium interdum. Nam aliquet vestibulum sapien id pretium. Maecenas aliquam sem tempor justo pharetra at porta nisi tempus. Curabitur pretium nisi non nisl interdum tincidunt. Ut.
+
+</section>
