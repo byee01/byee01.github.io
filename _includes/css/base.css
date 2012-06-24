@@ -1,5 +1,4 @@
 /** Base Page **/
-
 /* Colors
  * background #E5E5E5
  * text #333
@@ -7,10 +6,14 @@
  */
 
 body {
-  background-color: #333;
+  background: #333;
   font-family: Georgia, serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+header {
+  margin-bottom: 30px;
 }
 
 #container {
@@ -20,11 +23,27 @@ body {
 
 h1 a {
   color: #E5E5E5;
+  float: left;
   font-weight: normal;
   line-height: 1.5em;
+  margin-top: -18px;
   text-decoration: none;
 }
 
-#content {
-  background: #E5E5E5;
+nav {
+  margin-left: 130px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: #E5E5E5;
+  padding: 6px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #FF5335;
 }

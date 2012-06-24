@@ -5,28 +5,32 @@
 <html>
 <head>
   <meta charset='utf-8'>
-  <title>Brian Yee{% if title %} | title {% endif %}</title>
+  <title>Brian Yee{% if page.title %} | {{ page.title }} {% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style type="text/css">
     /** Normalize CSS from necolas.github.com/normalize.css/ **/
     {% include css/normalize.css %}
 
-    /** Page Styles **/
+    /** Base Styles **/
     {% include css/base.css %}
+
+    {% if page.style %}
+    /** Custom Styles for article {{ page.title }} **/
+    {{ page.style }}
+    {% endif %}
   </style>
 </head>
 <body>
+  <header>
+    <h1><a href="/">Brian Yee</a></h1>
+    <nav>
+      <ul>
+        <li><a href="/posts">Posts</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </header><!-- /header -->
   <section id="container">
-    <header>
-      <h1><a href="/">Brian Yee</a></h1>
-      <nav>
-        <ul>
-        {% for page in site.pages %}
-            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-        {% endfor %}
-        </ul>
-      </nav>
-    </header><!-- /header -->
     <section id="content">
       {{ content }}
     </section>
