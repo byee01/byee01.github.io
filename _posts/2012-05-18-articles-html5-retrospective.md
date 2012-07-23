@@ -1,4 +1,5 @@
 ---
+published: false
 layout: default
 title: "HTML5 StuCo: A Retrospective"
 category: articles

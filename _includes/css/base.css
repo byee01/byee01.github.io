@@ -1,13 +1,16 @@
-/** Base Page **/
-/* Colors
- * @background = "#F8F8F8"
- * @text = "#333"
- * @accent = "#F70"
- * @accentLight = "#FA5"
- * @accentDark = "#C60"
- * @accentMed = "#B40"
+/** Base Styles **/
+/** Colors **/
+/* I'm using CSS Less(ish): https://github.com/kizza/CSS-Less-ish
+ * @background = #F8F8F8
+ * @text = #333
+ * @textLight = #777
+ * @accent = #F70
+ * @accentLight = #FA5
+ * @accentDark = #C60
+ * @accentMed = #B40
  */
 
+/** My favorite little design flourish. **/
 ::-moz-selection { background: #F70; }
 ::selection      { background: #F70; }
 
@@ -19,11 +22,24 @@ body {
   font-size: 1em;
   line-height: 1.5;
   vertical-align: baseline;
-
 }
 
 html>body {
   font-size: 22px;
+}
+
+/* Not yet responsive, but...on its way. */
+/* Layouts inspired by Bootstrap: http://twitter.github.com/bootstrap/scaffolding.html#responsive */
+/* Currently for smartphones, default (up to 1200px) */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
 }
 
 strong {
@@ -57,13 +73,18 @@ h1 a {
   text-decoration: none;
 }
 
-/* Not yet responsive, but...on its way. */
-/* Layouts inspired by Bootstrap: http://twitter.github.com/bootstrap/scaffolding.html#responsive */
-/* Currently for smartphones, default (up to 1200px) */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 95%;
+footer {
+  color: #777;
 }
 
-/* Variables:text{265:269,319:323}.accent{201:205,240:244,497:501}.accentLight{525:529}.background{285:292}.accentMed{584:588}.accentDark{554:558} */
+footer .container {
+  border-top: 1px solid #AAA;
+}
+
+footer a {
+  color: #777;
+  font-size: 0.85em;
+  text-decoration: none;
+}
+
+/* Variables:textLight{1176:1180,1258:1262}.text{391:395,445:449}.accent{327:331,366:370,936:940}.accentLight{964:968}.background{411:418}.accentMed{1023:1027}.accentDark{993:997} */

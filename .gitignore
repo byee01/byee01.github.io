@@ -1,3 +1,7 @@
 # Test builds for the site
 _site
-*.psd
+
+# Images and stuff
+*_n.png
+*_n.jpg
+*.psd 
