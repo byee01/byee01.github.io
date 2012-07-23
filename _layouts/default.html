@@ -2,11 +2,12 @@
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-  <title>Brian Yee{% if page.title %} | {{ page.title }} {% endif %}</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Brian Yee{% if page.title %} | {{ page.title }} {% endif %}</title>
   <style type="text/css">
     /** Normalize CSS from necolas.github.com/normalize.css/ **/
     {% include css/normalize.css %}
@@ -19,6 +20,7 @@
     {{ page.style }}
     {% endif %}
   </style>
+  {% include partials/ga %}
 </head>
 <body>
   <header>
@@ -30,11 +32,17 @@
         <li><a href="/about">About</a></li>
       </ul>
     </nav>
-
     </div>
   </header><!-- /header -->
   <section id="content">
   {{ content }}
   </section>
+  <script type="text/javascript">
+    window.addEventListener("load",function() {
+      setTimeout(function(){
+        window.scrollTo(0, 0);
+      }, 0);
+    });
+  </script>
 </body>
 </html>
