@@ -4,6 +4,7 @@
  * @background = #F8F8F8
  * @text = #333
  * @textLight = #777
+ * @textDark = #111
  * @accent = #F70
  * @accentLight = #FA5
  * @accentDark = #C60
@@ -18,7 +19,7 @@ body {
   color: #333;
   background: #F8F8F8;
   border-top: 10px solid #333;
-  font-family: serif;
+  font-family: "Times New Roman", serif;
   font-size: 1em;
   line-height: 1.5;
   vertical-align: baseline;
@@ -28,18 +29,51 @@ html>body {
   font-size: 22px;
 }
 
+
 /* Not yet responsive, but...on its way. */
 /* Layouts inspired by Bootstrap: http://twitter.github.com/bootstrap/scaffolding.html#responsive */
-/* Currently for smartphones, default (up to 1200px) */
+/* Currently for smartphones, default (usually up to 1200px) */
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  width: 95%;
+  overflow: hidden;
+  width: 94%;
+}
+
+ol.unstyled, ul.unstyled {
+  list-style-type: none;
+  padding: 0;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  font-size: 0.5em;
+}
+
+figcaption, figcaption a, figcaption a:active, figcaption a:visited {
+  font-family: sans-serif;
+  color: #FFF;
+  text-decoration: none;
+}
+
+figcaption a:hover {
+  color: #DDD;
 }
 
 img {
   height: auto;
-  max-width: 100%;
+  width: 100%;
+}
+
+figure.half {
+  float: right;
+  width: 50%;
 }
 
 strong {
@@ -73,6 +107,15 @@ h1 a {
   text-decoration: none;
 }
 
+h3 {
+  background: #333;
+  color: #F8F8F8;
+  font-size: 1em;
+  font-weight: normal;
+  display: inline;
+  padding: 3px 4px;
+}
+
 footer {
   color: #777;
 }
@@ -82,9 +125,33 @@ footer .container {
 }
 
 footer a {
-  color: #777;
+  color: #777
   font-size: 0.85em;
   text-decoration: none;
 }
 
-/* Variables:textLight{1176:1180,1258:1262}.text{391:395,445:449}.accent{327:331,366:370,936:940}.accentLight{964:968}.background{411:418}.accentMed{1023:1027}.accentDark{993:997} */
+
+/* Index */
+#resume li {
+  overflow: hidden;
+}
+
+.summary {
+  float: left;
+  width: 50%;
+}
+
+
+
+/** iPhone **/
+@media (max-width: 480px) {
+  html > body {
+    font-size: 20px;
+  }
+  figure.half, .summary {
+  float: none;
+  width: inherit;
+}
+}
+
+/* Variables:textLight{1783:1787,1865:1869}.text{411:415,465:469,1658:1662}.accent{347:351,386:390,1417:1421}.accentLight{1445:1449}.background{431:438,1673:1680}.accentMed{1504:1508}.accentDark{1474:1478} */
