@@ -1,4 +1,10 @@
-safe: true
+# Github will automatically rewrite safe to be true.
+# By setting it to false, we fake a development/production flag. For example,
+# now we can check site.safe before we render analytics.
+safe: false
+
+# Github overrides these settings
 lsi: false
 pygments: true
+
 permalink: pretty

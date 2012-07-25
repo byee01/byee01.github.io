@@ -21,7 +21,9 @@
     {{ page.style }}
     {% endif %}
   </style>
-  {% include partials/ga %}
+  {% if site.safe %}
+    {% include partials/ga %}
+  {% endif %}
 </head>
 <body>
   <header>
