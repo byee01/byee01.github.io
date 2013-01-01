@@ -1,11 +1,12 @@
 ---
 layout: default
 title: About
-category: pages
+category: page
+permalink: /about
 tags: nav
 ---
 
 I'm Brian.
 --------
 
-I'm a student at Carnegie Mellon.
+I'm a student at Carnegie Mellon. This is the one in root.

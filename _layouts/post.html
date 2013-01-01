@@ -1,0 +1,59 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="description" content="Brian Yee's personal website. I'm student at Carnegie Mellon University. Check it out!" />
+  <title>Brian Yee{% if page.title %} | {{ page.title }} {% endif %}</title>
+  <style type="text/css">
+    /** Normalize CSS from necolas.github.com/normalize.css/ **/
+    {% include css/normalize.css %}
+
+    /** Base Styles **/
+    {% include css/base.css %}
+
+    {% if page.style %}
+    /** Custom Styles for article {{ page.title }} **/
+    {{ page.style }}
+    {% endif %}
+  </style>
+  {% if site.safe %}
+    {% include partials/ga %}
+  {% endif %}
+</head>
+<body>
+  <header>
+    <div class="container">
+    <h1><a href="/">Brian Yee</a></h1>
+<!--     <nav>
+      <ul>
+        <li><a href="/posts">Posts</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav> -->
+    </div>
+  </header><!-- /header -->
+  <section id="content">
+    <div class="container">
+{{ content }}
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <a href="http://twitter.com/BadKemer" title="Following Brian on Twitter is pretty cool." rel="me" target="_blank">@BadKemer</a> // <a href="mailto:hello@brianayee.com" title="Shoot me an email at hello@brianayee.com">hello@brianayee.com</a>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    window.addEventListener("load",function() {
+      setTimeout(function(){
+        window.scrollTo(0, 0);
+      }, 0);
+    });
+  </script>
+  <!-- Hosted by Github Pages -->
+</body>
+</html>

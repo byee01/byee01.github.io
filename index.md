@@ -15,30 +15,6 @@ title: Index
         <a href="https://plus.google.com/113583516480938209797/posts/5aoRiPPLf4G" rel="me" title="View the full picture on Google Plus">Carnegie Mellon University</a>
       </figcaption>
     </figure>
-<!--
-  <li>
-    <div class="summary">
-      <h3>YouTube <span>&ndash; Summer 2011</span></h3>
-      <p></p>
-    </div>
-
-    <figure class="half" >
-      <img src="img/youtube_interns_bw.jpg" alt="Summer 2011 YouTube intern swag"/>
-      <figcaption>Summer 2011 YouTube interns</figcaption>
-    </figure>
-  </li>
-  <li>
-    <div class="summary">
-      <h3>IBM <span>&ndash; Summer 2010</span></h3>
-    </div>
-    <figure class="half" >
-      <img src="img/ibm_bw.jpg" alt="IBM Silicon Valley Labs"/>
-      <figcaption>IBM Silicon Valley Labs</figcaption>
-    </figure>
-  </li> -->
-
-
-
 </div>
 
 <!--
