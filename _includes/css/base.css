@@ -56,24 +56,9 @@ figcaption {
   font-size: 0.5em;
 }
 
-figcaption, figcaption a, figcaption a:active, figcaption a:visited {
-  font-family: sans-serif;
-  color: #FFF;
-  text-decoration: none;
-}
-
-figcaption a:hover {
-  color: #DDD;
-}
-
 img {
   height: auto;
   width: 100%;
-}
-
-figure.half {
-  float: right;
-  width: 50%;
 }
 
 strong {
@@ -125,33 +110,16 @@ footer .container {
 }
 
 footer a {
-  color: #777
+  color: #777;
   font-size: 0.85em;
   text-decoration: none;
 }
 
-
-/* Index */
-#resume li {
-  overflow: hidden;
-}
-
-.summary {
-  float: left;
-  width: 50%;
-}
-
-
-
-/** iPhone **/
+/** Phones **/
 @media (max-width: 480px) {
   html > body {
     font-size: 20px;
   }
-  figure.half, .summary {
-  float: none;
-  width: inherit;
-}
 }
 
-/* Variables:textLight{1783:1787,1865:1869}.text{411:415,465:469,1658:1662}.accent{347:351,386:390,1417:1421}.accentLight{1445:1449}.background{431:438,1673:1680}.accentMed{1504:1508}.accentDark{1474:1478} */
+/* Variables:textLight{1557:1561,1639:1643}.text{411:415,465:469,1432:1436}.accent{347:351,386:390,1191:1195}.accentLight{1219:1223}.background{431:438,1447:1454}.accentMed{1278:1282}.accentDark{1248:1252} */

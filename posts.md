@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Index
+title: Posts
 ---
 
 <div class="container">

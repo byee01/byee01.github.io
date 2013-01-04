@@ -2,6 +2,8 @@
 layout: post
 title: MHCI Survival Guide
 category: articles
+
+published: false
 ---
 
 1. **Work-life balance? Ha!**
