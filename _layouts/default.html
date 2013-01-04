@@ -15,22 +15,17 @@
 
     /** Base Styles **/
     {% include css/base.css %}
-
-    {% if page.style %}
-    /** Custom Styles for article {{ page.title }} **/
-    {{ page.style }}
-    {% endif %}
   </style>
   {% if site.safe %}
     {% include partials/ga %}
   {% endif %}
 </head>
 <body>
-  <header>
+  <nav>
     <div class="container">
-      <h1>Brian Yee</h1>
+      <p>Brian Yee</p>
     </div>
-  </header><!-- /header -->
+  </nav><!-- /nav -->
   <section id="content">
   {{ content }}
   </section>

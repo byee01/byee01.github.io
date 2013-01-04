@@ -1,4 +1,3 @@
-/** Base Styles **/
 /** Colors **/
 /* I'm using CSS Less(ish): https://github.com/kizza/CSS-Less-ish
  * @background = #F8F8F8
@@ -18,7 +17,6 @@
 body {
   color: #333;
   background: #F8F8F8;
-  border-top: 10px solid #333;
   font-family: "Times New Roman", serif;
   font-size: 1em;
   line-height: 1.5;
@@ -81,10 +79,27 @@ a:visited {
   color: #B40;
 }
 
+nav {
+  background: #333;
+  color: #F8F8F8;
+  font-size: 1.25em;
+}
+
+nav p {
+  margin: 0.25em 0;
+}
+
 h1 {
   font-size: 1.75em;
   font-weight: normal;
   line-height: 1.25;
+}
+
+#content h1 {
+  border-bottom: 0.15em solid #333;
+  font-size: 4em;
+  margin: 0;
+  margin-top: 0.5em;
 }
 
 h1 a {
@@ -97,12 +112,18 @@ h3 {
   color: #F8F8F8;
   font-size: 1em;
   font-weight: normal;
-  display: inline;
+  display: inline-block;
+  margin: 1.5em 0 0.25em 0;
   padding: 3px 4px;
+}
+
+h3 + p {
+  margin: 0;
 }
 
 footer {
   color: #777;
+  margin-top: 1em;
 }
 
 footer .container {
@@ -120,6 +141,14 @@ footer a {
   html > body {
     font-size: 20px;
   }
+
+  #content h1 {
+    font-size: 2em;
+  }
+
+  footer {
+    margin-top: 0.5em;
+  }
 }
 
-/* Variables:textLight{1557:1561,1639:1643}.text{411:415,465:469,1432:1436}.accent{347:351,386:390,1191:1195}.accentLight{1219:1223}.background{431:438,1447:1454}.accentMed{1278:1282}.accentDark{1248:1252} */
+/* Variables:textLight{1769:1773,1870:1874}.text{391:395,1256:1260,1452:1456,1585:1589}.accent{327:331,366:370,1140:1144}.accentLight{1168:1172}.background{411:418,1271:1278,1600:1607}.accentMed{1227:1231}.accentDark{1197:1201} */
