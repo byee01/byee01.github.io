@@ -138,6 +138,7 @@ footer {
 
 footer .container {
   border-top: 1px solid #AAA;
+  padding: 0;
 }
 
 footer a {
@@ -161,4 +162,4 @@ footer a {
   }
 }
 
-/* Variables:textLight{1435:1439,1919:1923,2020:2024}.text{391:395,1275:1279,1602:1606,1735:1739}.accent{327:331,366:370,1159:1163}.accentLight{1187:1191}.background{411:418,1290:1297,1750:1757}.accentMed{1246:1250}.accentDark{1216:1220} */
+/* Variables:textLight{1435:1439,1919:1923,2034:2038}.text{391:395,1275:1279,1602:1606,1735:1739}.accent{327:331,366:370,1159:1163}.accentLight{1187:1191}.background{411:418,1290:1297,1750:1757}.accentMed{1246:1250}.accentDark{1216:1220} */
