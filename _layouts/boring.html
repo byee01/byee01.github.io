@@ -1,0 +1,33 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="description" content="Brian Yee's personal website. I work at YouTube!" />
+  <title>Brian Yee</title>
+  <style type="text/css">
+    /** Base Styles **/
+    {% include css/base.css %}
+  </style>
+  {% if site.safe %}
+    {% include partials/ga %}
+  {% endif %}
+</head>
+<body>
+  <div class="container">
+    <h1>Brian Yee <span class="tagline">is a developer and designer currently working at YouTube.</span></h1>
+    <a href="http://twitter.com/BadKemer" title="You should follow me on Twitter." rel="me" target="_blank">@BadKemer</a> // <a href="mailto:hello@brianayee.com" title="Shoot me an email at hello@brianayee.com">hello@brianayee.com</a>
+  </div>
+  <script type="text/javascript">
+    window.addEventListener("load",function() {
+      setTimeout(function(){
+        window.scrollTo(0, 0);
+      }, 0);
+    });
+  </script>
+</body>
+</html>
