@@ -1,7 +1,3 @@
 ---
-layout: default
+layout: boring
 ---
-
-<div class="container">
-  {{ site.posts.first.content }}
-</div>
