@@ -5,6 +5,8 @@ safe: false
 
 # Github overrides these settings
 lsi: false
-pygments: true
+
+# Syntax highlighter
+highlighter: rouge
 
 permalink: /:title/
