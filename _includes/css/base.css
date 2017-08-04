@@ -1,67 +1,52 @@
-/** Colors **/
-/* I'm using CSS Less(ish): https://github.com/kizza/CSS-Less-ish
- * @background = #F8F8F8
- * @text = #333
- * @textLight = #777
- * @textDark = #111
- * @accent = #F70
- * @accentLight = #FA5
- * @accentDark = #C60
- * @accentMed = #B40
- */
-
-/** My favorite little design flourish. **/
-::-moz-selection { background: #F70; }
-::selection      { background: #F70; }
-
 body {
-  color: #333;
-  background: #F8F8F8;
-  font-family: "Times New Roman", serif;
-  font-size: 1em;
+  color: #222;
+  background: #efefef;
+  max-width: 800px;
+  padding: 0 4%;
+  margin: 20px auto;
+
+  font-family: serif;
+  font-size: 125%;
   line-height: 1.5;
   vertical-align: baseline;
 }
 
-html>body {
-  font-size: 22px;
-}
-
-
-/* Not yet responsive, but...on its way. */
-/* Layouts inspired by Bootstrap: http://twitter.github.com/bootstrap/scaffolding.html#responsive */
-/* Currently for smartphones, default (usually up to 1200px) */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 10px 0;
-  width: 94%;
-}
-
-ol.unstyled, ul.unstyled {
-  list-style-type: none;
-  padding: 0;
-}
-
-figure {
-  position: relative;
-}
-
-figcaption {
-  position: absolute;
-  bottom: 10px;
-  right: 5px;
-  font-size: 0.5em;
-}
-
 img {
-  height: auto;
   width: 100%;
 }
 
-strong {
-  font-weight: bold;
+h1 {
+  font-size: 200%;
+  margin: 0;
+}
+
+h2 {
+  font-size: 150%;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 125%;
+  margin-bottom: 0;
+}
+
+h1 + p,
+h2 + p,
+h3 + p {
+  margin-top: 0;
+}
+
+pre > code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f1f1f1;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px; 
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; 
 }
 
 a {
@@ -80,84 +65,14 @@ a:visited {
   color: #B40;
 }
 
-nav {
-  background: #333;
-  color: #F8F8F8;
-  font-size: 1.25em;
-}
-
-nav p {
-  display: inline-block;
-  line-height: 1;
-  margin: 0;
-  margin-right: 9px;
-}
-
-
-h1 {
-  font-size: 2em;
-  font-weight: normal;
-  letter-spacing: -0.5px;
-  line-height: 1.25;
-  margin: 25% 0;
-}
-
-.tagline {
-  color: #777;
-  font-size: 0.75em;
-  line-height: 1.25;
-}
-
-#content h1 {
-  border-bottom: 0.1em solid #333;
-  font-size: 4em;
-  margin: 0;
-  margin-top: 0.5em;
-}
-
-h1 a {
-  color: inherit;
-  text-decoration: none;
-}
-
-h3 {
-  background: #333;
-  color: #F8F8F8;
-  font-size: 1em;
-  font-weight: normal;
-  display: inline-block;
-  margin: 1.5em 0 0.25em 0;
-  padding: 3px 4px;
-}
-
-h3 + p {
-  margin: 0;
-}
-
-footer {
-  color: #777;
-  margin-top: 1em;
-}
-
-footer .container {
-  padding: 0;
-}
-
-footer a {
-  color: #777;
-  font-size: 0.85em;
-  text-decoration: none;
+::selection {
+  background: #F70;
+  color: #fff;
 }
 
 /** Phones **/
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   html > body {
     font-size: 16px;
   }
-
-  .tagline {
-    display: block;
-  }
 }
-
-/* Variables:textLight{1545:1549,1956:1960,2041:2045}.text{391:395,1275:1279,1639:1643,1772:1776}.accent{327:331,366:370,1159:1163}.accentLight{1187:1191}.background{411:418,1290:1297,1787:1794}.accentMed{1246:1250}.accentDark{1216:1220} */
