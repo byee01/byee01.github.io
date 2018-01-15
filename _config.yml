@@ -3,10 +3,11 @@
 # now we can check site.safe before we render analytics.
 safe: false
 
-# Github overrides these settings
-lsi: false
-
 # Syntax highlighter
 highlighter: rouge
 
-permalink: /:title/
+# Use collections to create subpages for recipes, etc.
+collections:
+  recipes:
+    output: true
+    permalink: '/:collection/:path/'
