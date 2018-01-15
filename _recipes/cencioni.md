@@ -16,5 +16,5 @@ ingredients:
 - 1 tsp brown sugar
 
 notes:
-- Alternate link: https://www.bonappetit.com/recipe/pasta-with-mushrooms-and-prosciutto
+- Alternate [Bon Appetit](https://www.bonappetit.com/recipe/pasta-with-mushrooms-and-prosciutto) version
 ---
