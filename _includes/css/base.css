@@ -1,12 +1,12 @@
 body {
   color: #222;
-  background: #efefef;
+  background: #fefefe;
   max-width: 800px;
   padding: 0 4%;
   margin: 20px auto;
 
   font-family: serif;
-  font-size: 125%;
+  font-size: 150%;
   line-height: 1.5;
   vertical-align: baseline;
 }
@@ -17,16 +17,19 @@ img {
 
 h1 {
   font-size: 200%;
+  font-weight: normal;
   margin: 0;
 }
 
 h2 {
   font-size: 150%;
+  font-weight: normal;
   margin-bottom: 0;
 }
 
 h3 {
   font-size: 125%;
+  font-weight: normal;
   margin-bottom: 0;
 }
 
