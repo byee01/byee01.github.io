@@ -1,7 +1,6 @@
 ---
 title: Mushroom Cencioni
 layout: recipe
-permalink: cencioni
 
 source_link: https://adventuresincooking.com/mushroom-cencioni-pasta-with/
 source_name: Adventures in Cooking

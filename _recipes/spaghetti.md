@@ -1,7 +1,6 @@
 ---
 title: Spaghetti
 layout: recipe
-permalink: spaghetti
 
 source_link: http://www.seriouseats.com/2014/09/how-to-make-rich-hearty-italian-american-red-sauce-one-hour-or-less.html
 source_name: Serious Eats

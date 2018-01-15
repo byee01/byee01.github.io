@@ -1,7 +1,6 @@
 ---
 title: Oyakodon
 layout: recipe
-permalink: oyakodon
 
 source_link: https://www.youtube.com/watch?v=iBSKWTtzumg
 source_name: Chef Dai

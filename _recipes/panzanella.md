@@ -1,7 +1,6 @@
 ---
 title: Panzanella
 layout: recipe
-permalink: panzanella
 
 source_link: http://www.seriouseats.com/2015/09/the-food-lab-panzanella-salad-done-right.html
 source_name: Serious Eats
