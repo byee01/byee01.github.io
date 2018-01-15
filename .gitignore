@@ -6,3 +6,8 @@ psds
 *_n.png
 *_n.jpg
 *.psd
+
+byee.sublime-project
+byee.sublime-workspace
+
+Gemfile.lock
