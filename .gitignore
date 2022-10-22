@@ -10,4 +10,5 @@ psds
 byee.sublime-project
 byee.sublime-workspace
 
-Gemfile.lock
+Gemfile
+*.lock
