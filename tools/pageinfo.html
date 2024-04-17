@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    span {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Page Size Debug Tool</h2>
+  <p>Load in any device browser to see the reported values for various page properties. Useful for debugging media queris and display zoom problems.</p>
+  <h4><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio">Pixel Ratio</a></h4>
+  <p><code>window.devicePixelRatio</code> <span id="outputPixelRatio"></span></p>
+
+  <h4><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/innerWidth">Window Size</a></h4>
+  <p><code>window.innerHeight</code> <span id="heightWindowOutput"></span></p>
+  <p><code>window.innerWidth</code> <span id="widthWindowOutput"></span></p>
+
+  <h4><a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen/width">Screen Size</a></h4>
+  <p><code>window.screen.height</code> <span id="heightScreenOutput"></span></p>
+  <p><code>window.screen.width</code> <span id="widthScreenOutput"></span></p>
+  <script type="text/javascript">
+let remove = null;
+const outputPixelRatio = document.querySelector("#outputPixelRatio");
+
+const updatePixelRatio = () => {
+  if (remove != null) {
+    remove();
+  }
+  const mqString = `(resolution: ${window.devicePixelRatio}dppx)`;
+  const media = matchMedia(mqString);
+  media.addEventListener("change", updatePixelRatio);
+  remove = () => {
+    media.removeEventListener("change", updatePixelRatio);
+  };
+
+  outputPixelRatio.textContent = window.devicePixelRatio;
+};
+
+const heightWindowOutput = document.querySelector("#heightWindowOutput");
+const widthWindowOutput = document.querySelector("#widthWindowOutput");
+
+const heightScreenOutput = document.querySelector("#heightScreenOutput");
+const widthScreenOutput = document.querySelector("#widthScreenOutput");
+
+function reportSize() {
+  heightWindowOutput.textContent = window.innerHeight;
+  widthWindowOutput.textContent = window.innerWidth;
+
+  heightScreenOutput.textContent = window.screen.height;
+  widthScreenOutput.textContent = window.screen.width;
+}
+
+window.onresize = reportSize; reportSize();
+updatePixelRatio();
+  </script>
+</body>
+</html>
