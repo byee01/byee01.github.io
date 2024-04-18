@@ -9,7 +9,7 @@
 </head>
 <body>
   <h2>Page Size Debug Tool</h2>
-  <p>Load in any device browser to see the reported values for various page properties. Useful for debugging media queris and display zoom problems.</p>
+  <p>Load in any device browser to see the reported values for various page properties. Useful for debugging media queries and display zoom problems.</p>
   <h4><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio">Pixel Ratio</a></h4>
   <p><code>window.devicePixelRatio</code> <span id="outputPixelRatio"></span></p>
 
@@ -20,6 +20,15 @@
   <h4><a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen/width">Screen Size</a></h4>
   <p><code>window.screen.height</code> <span id="heightScreenOutput"></span></p>
   <p><code>window.screen.width</code> <span id="widthScreenOutput"></span></p>
+
+  <input placeholder="Test Form Input" />
+
+  <h4><a href="https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API">Visibility</a></h4>
+  <p><code>document.hidden</code> <span id="visibility"></span></p>
+
+  <h4><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/focus_event">Focus</a></h4>
+  <p><code>blur, focus</code> <span id="focus"></span></p>
+
   <script type="text/javascript">
 let remove = null;
 const outputPixelRatio = document.querySelector("#outputPixelRatio");
@@ -52,6 +61,23 @@ function reportSize() {
   widthScreenOutput.textContent = window.screen.width;
 }
 
+const visibilityOutput = document.querySelector("#visibility");
+function reportVisibility() {
+  visibilityOutput.textContent = document.hidden; 
+}
+
+const focusOutput = document.querySelector("#focus");
+function pause() {
+  focusOutput.textContent = "LOST";
+}
+
+function play() {
+  focusOutput.textContent = "FOCUSED";
+}
+
+window.addEventListener("blur", pause);
+window.addEventListener("focus", play);
+document.addEventListener("visibilitychange", () => reportVisibility()); reportVisibility();
 window.onresize = reportSize; reportSize();
 updatePixelRatio();
   </script>
